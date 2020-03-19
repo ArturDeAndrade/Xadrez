@@ -1,0 +1,33 @@
+:root {
+    --tam-casa: 100px;
+    --tam-peca: calc(var(--cell-size) * .85);
+
+    --cor-fundo: #111111;
+    --cor-pecas: #EEEEEE;
+    --casas-pretas: saddlebrown;
+    --casas-brancas: sandybrown;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.tabuleiro {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(8, auto);
+}
+
+.casa {
+    width: var(--tam-casa);
+    height: var(--tam-casa);
+}
+
+.casa-branca {
+    background-color: var(--casas-brancas);
+}
+
+.casa-preta {
+    background-color: var(--casas-pretas);
+}
