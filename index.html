@@ -5,82 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
     <title>Xadrez</title>
 </head>
 
 <body>
     <div class="tabuleiro" id="tabuleiro">
-        <div class="casa a 8 casa-branca" info-casa></div>
-        <div class="casa b 8 casa-preta" info-casa></div>
-        <div class="casa c 8 casa-branca" info-casa></div>
-        <div class="casa d 8 casa-preta" info-casa></div>
-        <div class="casa e 8 casa-branca" info-casa></div>
-        <div class="casa f 8 casa-preta" info-casa></div>
-        <div class="casa g 8 casa-branca" info-casa></div>
-        <div class="casa h 8 casa-preta" info-casa></div>
-
-        <div class="casa a 7 casa-preta" info-casa></div>
-        <div class="casa b 7 casa-branca" info-casa></div>
-        <div class="casa c 7 casa-preta" info-casa></div>
-        <div class="casa d 7 casa-branca" info-casa></div>
-        <div class="casa e 7 casa-preta" info-casa></div>
-        <div class="casa f 7 casa-branca" info-casa></div>
-        <div class="casa g 7 casa-preta" info-casa></div>
-        <div class="casa h 7 casa-branca" info-casa></div>
-
-        <div class="casa a 6 casa-branca" info-casa></div>
-        <div class="casa b 6 casa-preta" info-casa></div>
-        <div class="casa c 6 casa-branca" info-casa></div>
-        <div class="casa d 6 casa-preta" info-casa></div>
-        <div class="casa e 6 casa-branca" info-casa></div>
-        <div class="casa f 6 casa-preta" info-casa></div>
-        <div class="casa g 6 casa-branca" info-casa></div>
-        <div class="casa h 6 casa-preta" info-casa></div>
-
-        <div class="casa a 5 casa-preta" info-casa></div>
-        <div class="casa b 5 casa-branca" info-casa></div>
-        <div class="casa c 5 casa-preta" info-casa></div>
-        <div class="casa d 5 casa-branca" info-casa></div>
-        <div class="casa e 5 casa-preta" info-casa></div>
-        <div class="casa f 5 casa-branca" info-casa></div>
-        <div class="casa g 5 casa-preta" info-casa></div>
-        <div class="casa h 5 casa-branca" info-casa></div>
-
-        <div class="casa a 4 casa-branca" info-casa></div>
-        <div class="casa b 4 casa-preta" info-casa></div>
-        <div class="casa c 4 casa-branca" info-casa></div>
-        <div class="casa d 4 casa-preta" info-casa></div>
-        <div class="casa e 4 casa-branca" info-casa></div>
-        <div class="casa f 4 casa-preta" info-casa></div>
-        <div class="casa g 4 casa-branca" info-casa></div>
-        <div class="casa h 4 casa-preta" info-casa></div>
-
-        <div class="casa a 3 casa-preta" info-casa></div>
-        <div class="casa b 3 casa-branca" info-casa></div>
-        <div class="casa c 3 casa-preta" info-casa></div>
-        <div class="casa d 3 casa-branca" info-casa></div>
-        <div class="casa e 3 casa-preta" info-casa></div>
-        <div class="casa f 3 casa-branca" info-casa></div>
-        <div class="casa g 3 casa-preta" info-casa></div>
-        <div class="casa h 3 casa-branca" info-casa></div>
-
-        <div class="casa a 2 casa-branca" info-casa></div>
-        <div class="casa b 2 casa-preta" info-casa></div>
-        <div class="casa c 2 casa-branca" info-casa></div>
-        <div class="casa d 2 casa-preta" info-casa></div>
-        <div class="casa e 2 casa-branca" info-casa></div>
-        <div class="casa f 2 casa-preta" info-casa></div>
-        <div class="casa g 2 casa-branca" info-casa></div>
-        <div class="casa h 2 casa-preta" info-casa></div>
-
-        <div class="casa a 1 casa-preta" info-casa></div>
-        <div class="casa b 1 casa-branca" info-casa></div>
-        <div class="casa c 1 casa-preta" info-casa></div>
-        <div class="casa d 1 casa-branca" info-casa></div>
-        <div class="casa e 1 casa-preta" info-casa></div>
-        <div class="casa f 1 casa-branca" info-casa></div>
-        <div class="casa g 1 casa-preta" info-casa></div>
-        <div class="casa h 1 casa-branca" info-casa></div>
+        <div class="coluna a">
+            <div class="linha oito" id="a8"></div>
+            <div class="linha sete" id="a7"></div>
+            <div class="linha seis" id="a6"></div>
+            <div class="linha cinco" id="a5"></div>
+            <div class="linha quatro" id="a4"></div>
+            <div class="linha tres" id="a3"></div>
+            <div class="linha dois" id="a2"></div>
+            <div class="linha um" id="a1"></div>
+        </div>
+        <div class="coluna b">
+            <div class="linha oito" id="b8"></div>
+            <div class="linha sete" id="b7"></div>
+            <div class="linha seis" id="b6"></div>
+            <div class="linha cinco" id="b5"></div>
+            <div class="linha quatro" id="b4"></div>
+            <div class="linha tres" id="b3"></div>
+            <div class="linha dois" id="b2"></div>
+            <div class="linha um" id="b1"></div>
+        </div>
+        <div class="coluna c">
+            <div class="linha oito" id="c8"></div>
+            <div class="linha sete" id="c7"></div>
+            <div class="linha seis" id="c6"></div>
+            <div class="linha cinco" id="c5"></div>
+            <div class="linha quatro" id="c4"></div>
+            <div class="linha tres" id="c3"></div>
+            <div class="linha dois" id="c2"></div>
+            <div class="linha um" id="c1"></div>
+        </div>
+        <div class="coluna d">
+            <div class="linha oito" id="d8"></div>
+            <div class="linha sete" id="d7"></div>
+            <div class="linha seis" id="d6"></div>
+            <div class="linha cinco" id="d5"></div>
+            <div class="linha quatro" id="d4"></div>
+            <div class="linha tres" id="d3"></div>
+            <div class="linha dois" id="d2"></div>
+            <div class="linha um" id="d1"></div>
+        </div>
+        <div class="coluna e">
+            <div class="linha oito" id="e8"></div>
+            <div class="linha sete" id="e7"></div>
+            <div class="linha seis" id="e6"></div>
+            <div class="linha cinco" id="e5"></div>
+            <div class="linha quatro" id="e4"></div>
+            <div class="linha tres" id="e3"></div>
+            <div class="linha dois" id="e2"></div>
+            <div class="linha um" id="e1"></div>
+        </div>
+        <div class="coluna f">
+            <div class="linha oito" id="f8"></div>
+            <div class="linha sete" id="f7"></div>
+            <div class="linha seis" id="f6"></div>
+            <div class="linha cinco" id="f5"></div>
+            <div class="linha quatro" id="f4"></div>
+            <div class="linha tres" id="f3"></div>
+            <div class="linha dois" id="f2"></div>
+            <div class="linha um" id="f1"></div>
+        </div>
+        <div class="coluna g">
+            <div class="linha oito" id="g8"></div>
+            <div class="linha sete" id="g7"></div>
+            <div class="linha seis" id="g6"></div>
+            <div class="linha cinco" id="g5"></div>
+            <div class="linha quatro" id="g4"></div>
+            <div class="linha tres" id="g3"></div>
+            <div class="linha dois" id="g2"></div>
+            <div class="linha um" id="g1"></div>
+        </div>
+        <div class="coluna h">
+            <div class="linha oito" id="h8"></div>
+            <div class="linha sete" id="h7"></div>
+            <div class="linha seis" id="h6"></div>
+            <div class="linha cinco" id="h5"></div>
+            <div class="linha quatro" id="h4"></div>
+            <div class="linha tres" id="h3"></div>
+            <div class="linha dois" id="h2"></div>
+            <div class="linha um" id="h1"></div>
+        </div>
     </div>
 </body>
 

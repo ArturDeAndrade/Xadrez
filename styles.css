@@ -8,8 +8,20 @@
     --casas-brancas: sandybrown;
 }
 
+@media (max-width: 1400px) {
+    :root {
+        --tam-casa: 75px;
+    }
+}
+
+@media (max-width: 700px) {
+    :root {
+        --tam-casa: 50px;
+    }
+}
+
 body {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo, black);
 }
 
 .tabuleiro {
@@ -22,6 +34,9 @@ body {
 .casa {
     width: var(--tam-casa);
     height: var(--tam-casa);
+    margin: 1px;
+
+    background-color: var(--casas-pretas);
 }
 
 .casa-branca {
